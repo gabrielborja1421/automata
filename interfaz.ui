@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>524</width>
-    <height>381</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="baseSize">
    <size>
@@ -22,102 +34,258 @@
   <property name="sizeGripEnabled">
    <bool>false</bool>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>20</y>
-     <width>300</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial Rounded MT Bold</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Autómata Finito Determinista</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">border-radius:5px;
+background: #7DEEDA;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0">
+      <item>
+       <widget class="QFrame" name="frame_contenindo">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:#000000ff;
+border-radius:20px
+}
+QPushButton:hover{
+background-color: rgb(134, 235, 255);
+border radius : 20px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="frame_superior">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>765</width>
+           <height>65</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+background: #10A6A6;
+mix-blend-mode: darken;
+}
+QPushButton{
+background-color:#000000ff;
+border-radius:20px
+}
+QPushButton:hover{
+background-color: rgb(134, 235, 255);
+border radius : 20px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="pushButton">
+          <property name="geometry">
+           <rect>
+            <x>800</x>
+            <y>600</y>
+            <width>800</width>
+            <height>600</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../../Downloads/x.png</normaloff>../../../Downloads/x.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>38</width>
+            <height>38</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>135</x>
+           <y>80</y>
+           <width>511</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+position: absolute;
+width: 493px;
+height: 65px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 39px;
+text-align: center;
+
+color: #000000;
+
+</string>
+         </property>
+         <property name="text">
+          <string>Autómatas Finito Determinista</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="list_result">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>300</y>
+           <width>444</width>
+           <height>140</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+position: absolute;
+width: 444px;
+height: 140px;
+
+background: #FFFCFC;
+
+border-radius: 20px;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="select_test">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>460</y>
+           <width>146</width>
+           <height>37</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 5px;
+background-color:rgb(255, 255, 255);
+padding: 0px;
+
+position: relative;
+width: 146px;
+height: 37px;</string>
+         </property>
+         <property name="text">
+          <string>Seleccionar el .txt</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>520</y>
+           <width>331</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">position: absolute;
+width: 437px;
+height: 25px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+
+text-align: center;
+
+color: #FF0A0A;</string>
+         </property>
+         <property name="text">
+          <string>Nota: Cargar el archivo TXT que deseas evaluar</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>520</y>
+           <width>41</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#000000ff;
+border-radius:20px</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../Downloads/alert-circle.png</normaloff>../../../Downloads/alert-circle.png</iconset>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>260</y>
+           <width>121</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">/* Resultado: */
 
 
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>65</x>
-     <y>60</y>
-     <width>400</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial Rounded MT Bold</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Instrucciones: Cargar el archivo test que deseas probar</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
+position: absolute;
+width: 437px;
+height: 25px;
 
-  <widget class="QPushButton" name="select_test">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>135</y>
-     <width>221</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Seleccionar TXT a evaluar</string>
-   </property>
-  </widget>
-  
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>190</y>
-     <width>161</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <pointsize>9</pointsize>
-    </font>
-   </property>
-   <property name="layoutDirection">
-    <enum>Qt::LeftToRight</enum>
-   </property>
-   <property name="text">
-    <string>Resultados:</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QListWidget" name="list_result">
-   <property name="geometry">
-    <rect>
-     <x>55</x>
-     <y>221</y>
-     <width>431</width>
-     <height>121</height>
-    </rect>
-   </property>
-  </widget>
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+
+text-align: center;
+
+color: #000000;</string>
+         </property>
+         <property name="text">
+          <string>Resultado:</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
