@@ -1,0 +1,13 @@
+switch(a){
+    case0:
+    case1:
+        intvariable = 21;
+        floatvariable2 = 123436.87363;
+    break;
+    default:
+        intvar=1;
+        intvar2=3;
+        floatver=2.3;
+    break;
+    break;
+}

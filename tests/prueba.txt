@@ -1,0 +1,13 @@
+switch (a) {
+    case 0:
+    case 1:
+        int variable2=2;
+        int variable3=2;
+    break;
+    default:
+        int vari=132;
+        float vares=12.232;
+    break;
+}
+
+

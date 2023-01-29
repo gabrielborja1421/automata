@@ -1,0 +1,6 @@
+switch(a) {
+    default:
+        floathatsr=23.5;
+        intvar=1;
+        intvar2=3;
+}
